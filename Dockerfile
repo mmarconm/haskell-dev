@@ -2,7 +2,7 @@ FROM ubuntu:20.04
 
 SHELL ["/bin/bash", "-xo", "pipefail", "-c"]
 
-# Generate locale C.UTF-8 for postgres and general locale data
+# Generate locale C.UTF-8 for general locale data
 # by Marcelo Marcon
 ENV LANG C.UTF-8
 ENV TZ=America/Cuiaba
@@ -37,4 +37,4 @@ RUN apt-get update && \
 # EXPOSE 8069
 USER me
 
-# DOCKER_BUILD: docker build -t haskell_me:1 .
+# DOCKER_BUILD: docker build -t haskell_dev:9.1 .
