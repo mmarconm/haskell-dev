@@ -40,7 +40,15 @@ REDIS_PORT=6379
 - [Haskell](https://www.haskell.org/)
 - [Haskell Beginner](https://www.haskellfromtheverybeginning.com/)
 
+
 ### Upgrade and install cabal
+```sh
+    # abra seu .bashrc e adicione a linha abaixo.
+    export PATH=$HOME/.cabal/bin:$PATH
+    # or
+    echo 'export PATH=$HOME/.cabal/bin:$PATH' > $HOME/.bashrc && source $HOME/.bashrc 
+    # -- feche e abra o seu terminal para carregar o seu bashrc
+```
 
 ```sh
 cabal update
@@ -52,3 +60,4 @@ cabal init
 cabal run
 
 ```
+

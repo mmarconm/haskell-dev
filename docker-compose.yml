@@ -1,8 +1,8 @@
 version: '3'
 services:
   app:
-    image: docker.io/haskell_me:1
+    image: ${HASKELL_IMAGE}
     working_dir: /mnt
     volumes:
-      - .:/mnt:cached
+      - .:/mnt
     command: sleep infinity
