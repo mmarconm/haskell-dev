@@ -7,7 +7,7 @@
 - Instale as extensões necessárias a seguir no seu vscode.
     - ms-vscode-remote.remote-containers
     - ms-azuretools.vscode-docker
-    - ms-python.python
+    - justusadam.language-haskell
 
 
 agora construa a imagem para o docker usando o comando abaixo.
