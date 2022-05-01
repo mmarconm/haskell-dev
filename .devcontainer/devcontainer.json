@@ -1,0 +1,18 @@
+{
+	"name": "Haskell",
+	"dockerComposeFile": [
+		"../docker-compose.yml",
+	],
+
+	"service": "app",
+	"workspaceFolder": "/mnt",
+	"settings": {},
+	"extensions": [
+		"justusadam.language-haskell"
+	]
+
+	// "forwardPorts": [],
+	// "runServices": [],
+	// "postCreateCommand": "apt-get update && apt-get install -y curl",
+	// "remoteUser": "vscode"
+}
