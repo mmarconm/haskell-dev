@@ -43,11 +43,11 @@ REDIS_PORT=6379
 
 ### Upgrade and install cabal
 ```sh
-    # abra seu .bashrc e adicione a linha abaixo.
-    export PATH=$HOME/.cabal/bin:$PATH
-    # or
-    echo 'export PATH=$HOME/.cabal/bin:$PATH' > $HOME/.bashrc && source $HOME/.bashrc 
-    # -- feche e abra o seu terminal para carregar o seu bashrc
+# abra seu .bashrc e adicione a linha abaixo.
+export PATH=$HOME/.cabal/bin:$PATH
+# or
+echo 'export PATH=$HOME/.cabal/bin:$PATH' > $HOME/.bashrc && source $HOME/.bashrc 
+# -- feche e abra o seu terminal para carregar o seu bashrc
 ```
 
 ```sh
