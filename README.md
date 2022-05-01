@@ -32,57 +32,23 @@ DB_PORT=5434
 REDIS_IMAGE=redis:6.0
 REDIS_PORT=6379
 ```
-### Como o ambiente configurado e os plugins no vscode instalado, principalmente o devcontainer. clique no icone ao canto inferior esquerdo com simbolo de 2 setas ><, abrirá uma caixa de menu, escolha a opção **REOPEN IN CONTAINER**
 
-### Isso levará alguns minutos ( depende do hardware e conexão da sua maquina ), então vscode abrirá dentro do container diretamente.
+## Haskell Links and Docs
 
-## Comandos úteis para Docker.
+- [Cabal Install](https://www.haskell.org/cabal/)
+- [Cabal User Guide](https://cabal.readthedocs.io/en/3.6/)
+- [Haskell](https://www.haskell.org/)
+- [Haskell Beginner](https://www.haskellfromtheverybeginning.com/)
+
+### Upgrade and install cabal
+
 ```sh
-# Listar todas as imagens
-docker images
+cabal update
 
-# Listar containers rodando
-docker ps
+cabal install cabal-install
 
-# Listar todos os containers
-docker ps -a
-
-# Remover image
-docker rmi nome_da_image:tag
-
-# Parar container
-docker stop nome_do_container
-
-# Iniciar que está parado.
-docker start nome_do_container
-
-# Para mais informações sobre comandos do docker https://stack.desenvolvedor.expert/appendix/docker/comandos.html
-```
-
-## Comandos úteis para docker-compose.
-```sh
-# docker compose tem que ser usado dentro da pasta onde está disponivel o arquivo docker-compose.yaml
-
-# Iniciar todos os containers
-docker compose up
-
-# Parar e destruir todos os containers e volumes criados
-docker compose down -v
-
-# Parar e destruir todos os containers ( sem remover os volumes )
-docker compose down
-
-# Mais informações sobre docker compose veja o link a seguir. https://docs.docker.com/compose/gettingstarted/
-```
-
-## Possiveis problemas e como resolver.
-
-Quando tiver erro com o odoo ou dificuldade de criar um novo banco ou até mesmo após excluir um banco existente.
-recomendo remover todos os serviços (containers) e seus volumes com o comando baixo.
+mkdir myproject && cd myproject
+cabal init
+cabal run
 
 ```
-# Realize o comando de dentro da pasta raiz onde se encontra o arquivo docker-compose.yaml
-docker compose down -v
-```
-## O COMANDO ACIMA IRÁ REMOVER TODOS OS DADOS E VOLUMES QUANDO EXECUTADO. OU SEJA PERDERÁ TODAS AS INFORMAÇOES SALVAS.
-## TENHA CERTEZA QUE TENHA FEITO ALGUM BACKUP ANTES DE EXECUTA-LO. ISSO SE O BACKUP FOR POSSIVEL =)
